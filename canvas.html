@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing App</title>
+    <link rel="stylesheet" href="canvas_style.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="color">Цвет:</label>
+        <input type="color" id="color" value="#000000">
+        <label for="size">Размер кисти:</label>
+        <input type="range" id="size" value="5" min="1">
+        <button id="eraser">Ластик</button>
+        <button id="save">Сохранить</button>
+        <input type="file" id="load" accept="image/*">
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="canvas_script.js"></script>
+</body>
+</html>
